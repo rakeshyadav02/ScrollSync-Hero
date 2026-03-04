@@ -1,37 +1,84 @@
 # ScrollSync Hero
 
-ScrollSync Hero is a modern, scroll-driven hero experience built with React, Vite, and GSAP ScrollTrigger. The project showcases smooth, progress-linked motion where typography and visuals respond directly to scroll position.
+Frontend Assignment Submission: scroll-driven hero section with React, Vite, and GSAP ScrollTrigger.
 
-## Overview
+## Submission Details
 
-- Sticky full-screen hero section inside an extended scroll scene
-- Character-by-character text reveal and staggered stats animation
-- Scrubbed visual movement (object, glow, and rings) tied to scroll progress
-- Responsive layout for desktop, tablet, and mobile
-- Reduced-motion fallback for accessibility
+- **Candidate Name:** `<your name>`
+- **Role Applied For:** `<role name>`
+- **Assignment Title:** ScrollSync Hero
+- **GitHub Repository:** `<add repo url>`
+- **Live Demo:** `<add deployed url>`
+- **Submission Date:** `2026-03-04`
 
-## Tech Stack
+## Assignment Objective
+
+Build a premium, scroll-synced hero experience where text and visual elements animate smoothly with scroll progress, while keeping code modular, responsive, and production-friendly.
+
+## Tech Stack Used
 
 - **Framework:** React 18 (`react`, `react-dom`)
 - **Build Tool:** Vite 5 (`vite`, `@vitejs/plugin-react`)
-- **Animation:** GSAP 3 with ScrollTrigger (`gsap`)
-- **Styling:** Custom CSS (responsive + performance-focused)
+- **Animation Library:** GSAP 3 + ScrollTrigger (`gsap`)
+- **Styling:** Custom responsive CSS
 - **Runtime:** Node.js 18+ and npm 9+
 
-## Core Implementation
+## Requirement Coverage
 
-### Scroll and Motion
+### 1) Hero Layout
 
-- `ScrollTrigger` timelines with `scrub: true` for scroll-synced interpolation
-- Intro reveal sequence for kicker text, title characters, and stat cards
-- Continuous transform-based motion for hero object, glow, and ring layers
+- Sticky full-viewport hero section (`100vh`) in a larger scroll scene
+- Main heading rendered character-by-character for controlled animation
+- Stats grid with 4 key metrics
+- Responsive behavior for desktop, tablet, and mobile
 
-### Performance and Accessibility
+### 2) Scroll-Based Animations
 
-- Animation targets `transform` and `opacity` only
-- `will-change` optimization on animated elements
-- React-safe animation lifecycle using `useLayoutEffect` + `gsap.context`
-- `prefers-reduced-motion` media query support in global styles
+- Scroll-linked reveal timeline for kicker, title characters, and stats
+- Continuous scrubbed motion for visual object, glow, and rings
+- Uses `ScrollTrigger` with explicit trigger/start/end ranges
+
+### 3) Performance and Accessibility
+
+- Animates only `transform` and `opacity`
+- Uses `will-change` for animated targets
+- Animation lifecycle handled with `useLayoutEffect` + `gsap.context`
+- Reduced-motion support through `prefers-reduced-motion`
+
+### 4) Code Quality
+
+- Componentized architecture (`HeroSection`, `StatsGrid`, `ScrollVisual`)
+- Reusable animation hook (`useHeroAnimations`)
+- Centralized data source (`src/data/stats.js`)
+
+## Reviewer Quick Start
+
+### Prerequisites
+
+- Node.js 18+
+- npm 9+
+
+### Run Locally
+
+```bash
+npm install
+npm run dev
+```
+
+Open: `http://localhost:5173`
+
+### Build Verification
+
+```bash
+npm run build
+npm run preview
+```
+
+## Available Scripts
+
+- `npm run dev` — start development server
+- `npm run build` — create production build (`dist/`)
+- `npm run preview` — preview production build locally
 
 ## Project Structure
 
@@ -58,62 +105,17 @@ ScrollSync Hero is a modern, scroll-driven hero experience built with React, Vit
 └─ vite.config.js
 ```
 
-## Getting Started
+## Security and Data Handling
 
-### Prerequisites
+- This project is frontend-only and does not process sensitive user data.
+- No API keys or secrets are required to run locally.
+- `.env*`, `dist`, and `node_modules` are ignored in `.gitignore`.
 
-- Node.js 18 or later
-- npm 9 or later
+## Submission Checklist
 
-### Installation
+- [ ] Add final GitHub repository URL
+- [ ] Add live deployed URL
+- [ ] Replace candidate and role fields in **Submission Details**
+- [ ] Confirm latest build passes (`npm run build`)
 
-```bash
-npm install
-```
 
-### Run in Development
-
-```bash
-npm run dev
-```
-
-The app runs at `http://localhost:5173` by default.
-
-## Available Scripts
-
-- `npm run dev` — Starts Vite development server
-- `npm run build` — Creates production build in `dist/`
-- `npm run preview` — Serves the production build locally
-
-## Build and Preview
-
-```bash
-npm run build
-npm run preview
-```
-
-## Deployment
-
-### Vercel
-
-1. Push the project to a Git repository.
-2. Import the repository in Vercel.
-3. Use `Vite` preset (or let Vercel auto-detect).
-4. Build command: `npm run build`
-5. Output directory: `dist`
-
-### GitHub Pages
-
-- Configure Vite `base` in `vite.config.js` as `/<repository-name>/`.
-- Deploy the built `dist/` output using GitHub Actions or `gh-pages` workflow.
-
-## Customization Guide
-
-- Update headline text in `src/components/Hero/HeroSection.jsx`
-- Edit statistics data in `src/data/stats.js`
-- Tune animation values and trigger ranges in `src/hooks/useHeroAnimations.js`
-- Refine styling and breakpoints in `src/styles/global.css`
-
-## Project Status
-
-The project is production-ready as a reusable hero animation section and can be integrated into a larger landing page or product site.
