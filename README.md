@@ -111,11 +111,5 @@ npm run preview
 - No API keys or secrets are required to run locally.
 - `.env*`, `dist`, and `node_modules` are ignored in `.gitignore`.
 
-## Submission Checklist
-
-- [ ] Add final GitHub repository URL
-- [ ] Add live deployed URL
-- [ ] Replace candidate and role fields in **Submission Details**
-- [ ] Confirm latest build passes (`npm run build`)
 
 
