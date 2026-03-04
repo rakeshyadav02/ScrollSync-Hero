@@ -1,0 +1,32 @@
+<svg width="1200" height="620" viewBox="0 0 1200 620" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="paint0" x1="112" y1="330" x2="1000" y2="330" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5E79FF" />
+      <stop offset="1" stop-color="#9BD3FF" />
+    </linearGradient>
+    <linearGradient id="paint1" x1="462" y1="208" x2="702" y2="208" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#B8D4FF" stop-opacity="0.95" />
+      <stop offset="1" stop-color="#EFF7FF" stop-opacity="0.7" />
+    </linearGradient>
+    <radialGradient id="wheelGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(342 420) rotate(90) scale(82)">
+      <stop stop-color="#6D86FF" stop-opacity="0.75" />
+      <stop offset="1" stop-color="#6D86FF" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <path d="M178 370C187 302 257 248 332 248H660C716 248 770 222 804 178L832 142C848 122 873 110 898 110H969C1006 110 1040 140 1046 176L1065 278C1085 290 1105 326 1092 370H178Z" fill="url(#paint0)"/>
+  <path d="M462 152C468 131 488 116 510 116H665C684 116 701 129 707 148L726 214H445L462 152Z" fill="url(#paint1)"/>
+  <rect x="290" y="278" width="190" height="18" rx="9" fill="#BFD2FF" fill-opacity="0.5"/>
+  <rect x="500" y="278" width="180" height="18" rx="9" fill="#D2DEFF" fill-opacity="0.45"/>
+
+  <circle cx="342" cy="420" r="84" fill="url(#wheelGlow)"/>
+  <circle cx="842" cy="420" r="84" fill="url(#wheelGlow)"/>
+
+  <circle cx="342" cy="420" r="65" fill="#0D132F" stroke="#A5BCFF" stroke-width="12"/>
+  <circle cx="842" cy="420" r="65" fill="#0D132F" stroke="#A5BCFF" stroke-width="12"/>
+
+  <circle cx="342" cy="420" r="20" fill="#DDE7FF"/>
+  <circle cx="842" cy="420" r="20" fill="#DDE7FF"/>
+
+  <path d="M1037 308C1078 308 1112 340 1112 380C1112 420 1078 452 1037 452H1018C1033 432 1042 407 1042 380C1042 353 1033 328 1018 308H1037Z" fill="#93B3FF" fill-opacity="0.7"/>
+</svg>
